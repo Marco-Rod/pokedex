@@ -1,0 +1,12 @@
+ *.py[co]
+Pokedex/settings.py
+Pokedex/wsgi.py
+.idea
+./media
+./static
+static
+media/*
+__pycache__
+.pyc
+*.pyo
+*.pyc
