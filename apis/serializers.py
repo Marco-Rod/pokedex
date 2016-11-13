@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-
+from pokemon.models import Region
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
@@ -12,4 +12,8 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 		model = Group
 		fields = ('url', 'name')
 			
-		
+
+class RegionSerializer(serializers.HyperlinkedModelSerializer):
+	class Meta:
+		model = Region
+		fields = ('name','description')
